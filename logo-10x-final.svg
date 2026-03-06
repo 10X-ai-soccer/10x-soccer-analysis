@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" width="800" height="300">
+  <defs>
+    <!-- 10X 그라디언트 -->
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#D22027;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#E85D21;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F5A623;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 속도선 애니메이션 -->
+    <style>
+      @keyframes speedLine {
+        0%, 100% { opacity: 0; transform: translateX(-100px); }
+        50% { opacity: 1; transform: translateX(0); }
+      }
+      .speed-line-1 {
+        animation: speedLine 2s ease-in-out infinite;
+      }
+      .speed-line-2 {
+        animation: speedLine 2s ease-in-out infinite 0.3s;
+      }
+      .speed-line-3 {
+        animation: speedLine 2s ease-in-out infinite 0.6s;
+      }
+    </style>
+  </defs>
+  
+  <!-- 배경 투명 -->
+  
+  <!-- 10X 로고 텍스트 -->
+  <text x="400" y="140" font-family="Arial Black, sans-serif" font-weight="900" font-size="160" 
+        text-anchor="middle" fill="url(#logoGradient)" 
+        style="font-style: italic; letter-spacing: -8px;">10X</text>
+  
+  <!-- ACCELERATE YOUR GAME -->
+  <text x="400" y="200" font-family="Arial, sans-serif" font-weight="700" font-size="28" 
+        text-anchor="middle" fill="#D22027" letter-spacing="6">ACCELERATE YOUR GAME</text>
+  
+  <!-- 속도선 (글자 가로지르기) -->
+  <!-- 속도선 1 -->
+  <line class="speed-line-1" x1="100" y1="100" x2="700" y2="100" 
+        stroke="url(#logoGradient)" stroke-width="8" stroke-linecap="round" opacity="0.4"/>
+  
+  <!-- 속도선 2 -->
+  <line class="speed-line-2" x1="120" y1="130" x2="680" y2="130" 
+        stroke="url(#logoGradient)" stroke-width="6" stroke-linecap="round" opacity="0.3"/>
+  
+  <!-- 속도선 3 -->
+  <line class="speed-line-3" x1="140" y1="160" x2="660" y2="160" 
+        stroke="url(#logoGradient)" stroke-width="5" stroke-linecap="round" opacity="0.2"/>
+</svg>
